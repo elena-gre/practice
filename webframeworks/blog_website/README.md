@@ -29,3 +29,9 @@ install requirements_dev.txt
 - `black .` -> black is used for formatting
 - `mypy` -> mypy is used for typing
 
+
+### HOW TO RUN MIGRATION
+
+* `python manage.py makemigrations blog` -> creates migration file
+* `python manage.py sqlmigrate blog 0001` -> outputs sql query without executing it
+* `python manage.py migrate` -> applies migration

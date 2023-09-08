@@ -3,6 +3,6 @@ services:
     build:
       context: ..
       dockerfile: ./docker/Dockerfile
-    command: gunicorn website.wsgi:application --bind 0.0.0.0:8000
+    command: python /code/manage.py runserver 0.0.0.0:8000
     ports:
       - 8000:8000

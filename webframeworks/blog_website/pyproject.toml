@@ -7,7 +7,7 @@ include = '\.pyi?$'
 select = ["E", "F", "B"]
 unfixable = ["B"]
 include = ["*.py", "*.pyi", "**/pyproject.toml", "*.ipynb"]
-line-length = 79
+line-length = 120
 target-version = "py311"
 
 # Ignore `E402` (import violations) in all `__init__.py` files
@@ -24,4 +24,4 @@ python_version = "3.11"
 disallow_untyped_defs = true
 
 [tool.django-stubs]
-django_settings_module = "blog.settings"
+django_settings_module = "blog_website.settings"
